@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+@import "./lazy";
+h1,
+h2,
+h3,
+h4,
+h5,
+.short-description,
+.lemon-font {
+  font-family: "Lemon", sans-serif !important;
+}
+#main-container {
+  position: relative;
+  .project-card {
+    padding: 20px;
+
+    @media only screen and (min-width: 900px) {
+      width: calc(33% - 40px);
+    }
+    @media only screen and (max-width: 899px) {
+      width: calc(50% - 40px);
+    }
+    @media only screen and (max-width: 499px) {
+      width: calc(100% - 40px);
+    }
+
+    img {
+      max-width: 100%;
+    }
+    .description {
+      padding: 5px;
+    }
+  }
+}

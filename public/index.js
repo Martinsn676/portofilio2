@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Hotel page",
     description:
-      "A page to show the expected limited scope of Noroff, and displays that after years of school, we are not supposed to even handle a basic backend with filters and even sorting. Even a basic woocommerce setup gives more options out of the gate than this",
+      "A page to show the expected limited scope of Noroff, and displays that after years of school, we are not supposed to even handle a basic backend with filters and even sorting. Even a basic woocommerce setup gives more options out of the gate than this.",
     image: "./screenshots/hotelPage.png",
     github: "https://github.com/Martinsn676/exam2/tree/main",
     netlify: "https://rococo-crisp-371f09.netlify.app/",
@@ -40,10 +40,11 @@ for (const project of projects) {
         <img src="${image}" alt="Project screenshot">
     </a>
     <div class="description">${description}</div>
-<div class="links">
-    <a href="${github}" target="_new">Github link</a>
-    <a href="${netlify}" target="_new">Live site</a>
-</div>
+    <ul class="links">
+<li>
+        <a href="${github}" target="_new">Github link</a></li>
+        <li><a href="${netlify}" target="_new">Live site</a></li>
+    </ul>
 `;
   content.appendChild(projectDiv);
 }
